@@ -1,0 +1,82 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: yes
+configure_sudoers: yes
+configure_terminal: yes
+configure_osx: yes
+
+dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_files:
+  - .bash_profile
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - git
+  - npm
+  - nvm
+  - carthage
+  - curl
+  - git-lfs
+  - cocoapods
+  - mogenerator
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - sequel-pro
+  - visual-studio-code
+  - iterm2
+  - sourcetree
+  - tableplus
+  - robo-3t
+  - fastlane
+  - 1Password
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+use_mac_store: yes
+mas_installed_apps: 
+  - { id: 497799835, name: "Xcode"}
+  - { id: 803453959, name: "slack"}
+  - { id: 539883307, name: "line"}
+  - { id: 1091189122, name: "Bear"}
+  - { id: 1176895641, name: "Spark"}
+  - { id: 1289197285, name: "Mindnode"}
+
+
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+  # - name: drush
+  #   state: present # present/absent, default: present
+  #   version: "^8.1" # default: N/A
+gem_packages: []
+  # - name: bundler
+  #   state: present # present/absent/latest, default: present
+  #   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+  # - name: webpack
+  #   state: present # present/absent/latest, default: present
+  #   version: "^2.6" # default: N/A
+pip_packages: []
+  # - name: mkdocs
+  #   state: present # present/absent/latest, default: present
+  #   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
