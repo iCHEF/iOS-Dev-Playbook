@@ -3,7 +3,6 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
 configure_sudoers: yes
-configure_terminal: yes
 configure_osx: yes
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
@@ -41,6 +40,7 @@ homebrew_cask_apps:
   - robo-3t
   - fastlane
   - 1Password
+  - google-chrome
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 use_mac_store: yes
