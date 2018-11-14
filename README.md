@@ -1,3 +1,31 @@
+## 目的
+套件安裝懶人包，包含工作上必備的工具自動安裝
+說明常用工具下載
+
+## 使用方法
+1. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
+  2. [Install Ansible](http://docs.ansible.com/intro_installation.html).
+  3. Clone this repository to your local drive.
+  4. Run `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
+  5. Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
+
+## 套件調整
+修改 `default.config.yml`可調整期望安裝的套件
+- `homebrew_installed_packages:`
+  - 調整 brew install 之套件
+- `homebrew_cask_apps`
+  - 調整 brew cask install 之套件
+- `mas_installed_apps`
+  - 調整透過 App Store安裝之App
+
+## PO工具相關
+ - [FortiClient](https://github.com/iCHEF/production_operation/blob/master/cookbook/ichef:PO_DUTY/FortiClient%20UsageAdministration.md) 使用筆電建議安裝，這樣才能遠端Office環境
+ - [Mongo VPN 設定](https://docs.google.com/document/d/1ldy3SByJ2gBSynVx7j8FIxV-C-E1Y-jcE7RewbiMfp4/edit) 建議大家都要設定
+ - [資料庫設定](https://github.com/iCHEF/iCHEF-2.0/blob/develop/scripts/clear_version.py) 建議大家都要設定
+ 
+
+# 以下原文 有興趣慢慢看
+
 # Mac Development Ansible Playbook
 
 [![Build Status](https://travis-ci.org/geerlingguy/mac-dev-playbook.svg?branch=master)](https://travis-ci.org/geerlingguy/mac-dev-playbook)
