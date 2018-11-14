@@ -3,10 +3,14 @@
 說明常用工具下載
 
 ## 使用方法
+### 全自動
+  - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/iCHEF/iOS-Dev-Playbook/master/install.sh)"`
+  
+### 調整部分安裝套件
   1. Download this repository as zip to your local drive. 
   2. Edit `default.config.yml`
-  3. Open terninal, enter folder, Run `chmod a+x install.sh`
-  4. Run `./install.sh`
+  3. Run `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
+  4. Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
 
 ## 套件調整
 修改 `default.config.yml`可調整期望安裝的套件
