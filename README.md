@@ -4,9 +4,9 @@
 
 ## 使用方法
   1. Download this repository as zip to your local drive. 
-  2. [Install Ansible](http://docs.ansible.com/intro_installation.html).
-  3. Run `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
-  4. Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
+  2. Edit `default.config.yml`
+  3. Open terninal, enter folder, Run `chmod a+x install.sh`
+  4. Run `./install.sh`
 
 ## 套件調整
 修改 `default.config.yml`可調整期望安裝的套件

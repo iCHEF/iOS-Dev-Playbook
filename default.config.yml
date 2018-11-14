@@ -36,7 +36,7 @@ homebrew_cask_apps:
   - sequel-pro
   - visual-studio-code
   - iterm2
-  - sourcetree
+  # - sourcetree
   - tableplus
   - robo-3t
   - fastlane
@@ -48,8 +48,8 @@ mas_installed_apps:
   - { id: 497799835, name: "Xcode"}
   - { id: 803453959, name: "slack"}
   - { id: 539883307, name: "line"}
-  - { id: 1091189122, name: "Bear"}
-  - { id: 1176895641, name: "Spark"}
+  # - { id: 1091189122, name: "Bear"}
+  # - { id: 1176895641, name: "Spark"}
   - { id: 1289197285, name: "Mindnode"}
 
 
