@@ -23,6 +23,7 @@ homebrew_installed_packages:
   - carthage
   - curl
   - git-lfs
+  - git-flow
   - cocoapods
   - mogenerator
 
