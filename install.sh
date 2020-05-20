@@ -1,7 +1,7 @@
 install_ansible() {
     if ! hash ansible-galaxy 2>/dev/null; then
         echo "Install Ansible"
-        sudo easy_install pip
+        curl https://bootstrap.pypa.io/get-pip.py | sudo python
         sudo pip install ansible
     fi
 }
